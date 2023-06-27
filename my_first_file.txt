@@ -1,0 +1,19 @@
+'HELLO TEAM'
+HELLO 2
+
+import random
+def generator():
+    total = 0
+    while total <6:
+        yield random.randint(1, 49)
+        total += 1
+
+def noroc_generator():
+    yield random.randint(10, 60)
+lottery_num = tuple(generator())
+noroc_num = tuple(noroc_generator())
+print("loteria 6/49")
+print(lottery_num)
+
+print("noroc num")
+print(noroc_num)
